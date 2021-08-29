@@ -5,7 +5,7 @@ var longestValidParentheses = function(s) {
                 for (var i = 1; i < s.length; i++) {
                     {
                         if ((function (c) { return c.charCodeAt == null ? c : c.charCodeAt(0); })(s.charAt(i)) == ')'.charCodeAt(0) && i - dp[i] >= 1 && (function (c) { return c.charCodeAt == null ? c : c.charCodeAt(0); })(s.charAt(i - dp[i] - 1)) == '('.charCodeAt(0)) {
-                            dp[i + 1] = dp[i - dp[i] - 1] + dp[i] + 2;   //checks indices for i if function of c will check in i what elements in the array iterate next and this continues during iteratation across the stack
+                            dp[i + 1] = dp[i - dp[i] - 1] + dp[i] + 2;   //checks indices for i if function of c will moderate in i what elements in the array iterate next and this continues during iteratation across the stack
                         }
                     }
                     ;
