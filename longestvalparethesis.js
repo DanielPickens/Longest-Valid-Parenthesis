@@ -5,19 +5,19 @@ var longestValidParentheses = function(s) {
                 for (var i = 1; i < s.length; i++) {
                     {
                         if ((function (c) { return c.charCodeAt == null ? c : c.charCodeAt(0); })(s.charAt(i)) == ')'.charCodeAt(0) && i - dp[i] >= 1 && (function (c) { return c.charCodeAt == null ? c : c.charCodeAt(0); })(s.charAt(i - dp[i] - 1)) == '('.charCodeAt(0)) {
-                            dp[i + 1] = dp[i - dp[i] - 1] + dp[i] + 2;
+                            dp[i + 1] = dp[i - dp[i] - 1] + dp[i] + 2;   //checks indices for i if function of c will check in i what elements are where and this continues during iteratation across the stack
                         }
                     }
                     ;
                 }
-                for (var i = 0; i < dp.length; i++) {
+                for (var i = 0; i < dp.length; i++) {  //another for loop to loop through the array on dp.length to find max value of i
                     {
                         if (dp[i] > max)
                             max = dp[i];
                     }
                     ;
                 }
-                return max;
+                return max;   // return value for max 
             };
 
 
