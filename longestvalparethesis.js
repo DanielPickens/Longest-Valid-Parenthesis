@@ -1,6 +1,6 @@
 var longestValidParentheses = function(s) {
         var dp = (function (s) { var a = []; while (s-- > 0)
-                    a.push(0); return a; })(s.length + 1);  // placing the element at the top of the stack , then return value for a
+                    a.push(0); return a; })(s.length + 1);  // placing the element at the top of the stack , then return value for a. there will be no need to pop in this solution
                 var max = 0;
                 for (var i = 1; i < s.length; i++) {
                     {
