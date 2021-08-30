@@ -1,5 +1,5 @@
 # Longest-Valid-Parenthesis
-my js solution for the Leetcode Hard difficulty challenge:
+my js solution for the Leetcode Hard difficulty challenge
 
 
 Leetcode Challenge: 
